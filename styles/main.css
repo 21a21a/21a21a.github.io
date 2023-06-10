@@ -1,0 +1,83 @@
+.youshang {
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	border-top-right-radius: 150px;
+
+}
+.zuoxiamohu {
+	background-color: #30FF41;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	border-bottom-left-radius: 150px;
+	opacity: 0.8;
+	font-size: 20px;
+	text-align: center;
+}
+.zuoshngmohu {
+	background-color: #30FF41;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	opacity: 0.8;
+	font-size: 20px;
+	border-top-left-radius: 150px;
+	text-align: center;
+}
+.bj {
+	background-color: #FFFFFF;
+	opacity: 0.8;
+	border-top-right-radius: 150px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.zuoshang  {
+	border-top-left-radius: 150px;
+	-webkit-box-shadow: 0px 0px 0px;
+	box-shadow: 0px 0px 0px;
+}
+.zuoxia  {
+	-webkit-box-shadow: 0px 0px 0px;
+	box-shadow: 0px 0px 0px;
+	border-bottom-left-radius: 150px;
+}
+.youxiamohu {
+	border-bottom-right-radius: 150px;
+	background-color: #FFFFFF;
+	opacity: 0.8;
+	font-size: 20px;
+	text-align: center;
+}
+.youxia {
+	border-bottom-right-radius: 150px;
+	background-color: #FFFFFF;
+	font-size: 20px;
+	text-align: center;
+}
+.youyuanmohu {
+	border-top-right-radius: 150px;
+	border-bottom-right-radius: 150px;
+	color: #000000;
+	font-size: 20px;
+	background-color: #FFFFFF;
+	opacity: 0.8;
+}
+.youyuan {
+	border-top-right-radius: 150px;
+	border-bottom-right-radius: 150px;
+	color: #000000;
+	font-size: 20px;
+	background-color: #FFFFFF;
+}
+.zuoyuanmohu {
+	color: #000000;
+	font-size: 20px;
+	background-color: #FFFFFF;
+	border-top-left-radius: 150px;
+	border-bottom-left-radius: 150px;
+	opacity: 0.8;
+}
+font   {
+	color: #FF0004;
+	font-size: 100px;
+}
