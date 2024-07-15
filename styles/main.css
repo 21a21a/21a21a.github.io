@@ -26,7 +26,6 @@ body{
     background-color: rgb(145, 228, 37);
     color: rgba(226, 255, 94, 0.582);
     background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 .dabiaoti{
     transform: translateY(200%);
