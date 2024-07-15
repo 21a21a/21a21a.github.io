@@ -26,6 +26,7 @@ body{
     background-color: rgb(145, 228, 37);
     color: rgba(226, 255, 94, 0.582);
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .dabiaoti{
     transform: translateY(200%);
@@ -49,4 +50,16 @@ td{
 table{
     border: 3px solid rgb(0, 255, 255);
     border-radius: 12px;
+}
+/* 默认情况下，所有设备都使用电脑背景图片 */
+body {
+    background-image: url('../images/bg.png');
+}
+
+/* 当屏幕宽度小于等于768px时，适用于手机 */
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url('../images/shouji.jpg');
+        background-size: cover;
+    }
 }
