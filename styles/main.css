@@ -51,15 +51,10 @@ table{
     border: 3px solid rgb(0, 255, 255);
     border-radius: 12px;
 }
-/* 默认情况下，所有设备都使用电脑背景图片 */
-body {
-    background-image: url('../images/bg.png');
-}
-
 /* 当屏幕宽度小于等于768px时，适用于手机 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1960px) {
     body {
-        background-image: url('../images/shouji.jpg');
+        background-image: url('../images/bg.png');
         background-size: cover;
     }
 }
