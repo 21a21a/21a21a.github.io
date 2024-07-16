@@ -57,11 +57,3 @@ table{
 body {
     background-image: url('../images/bg.png');
 }
-
-/* 当屏幕宽度小于等于768px时，适用于手机 */
-@media only screen and (max-width: 768px) {
-    body {
-        background-image: url('../images/shouji.jpg');
-        background-size: cover;
-    }
-}
