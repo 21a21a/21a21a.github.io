@@ -1,5 +1,5 @@
 .y1{
-    width: fit-content;
+    width: 60%;
     height: fit-content;
     border: 3px solid rgb(21, 156, 209);
     margin: 200px auto;
@@ -46,12 +46,13 @@ body{
 td{
     color: rgb(255, 255, 255);
     background: #000;
-    font-size: 25px;
+    font-size: 20px;
     height: 50px;
 }
 table{
     border: 3px solid rgb(0, 255, 255);
     border-radius: 12px;
+    width: 80%;
 }
 /* 默认情况下，所有设备都使用电脑背景图片 */
 body {
