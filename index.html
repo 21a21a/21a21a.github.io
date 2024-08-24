@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <!-- <h1 class="title">主页</h1> -->
+        </header>
+        
+        <main class="main-content">
+            <section class="clock-section">
+                <div class="clock">
+                    <div class="hand hour-hand"></div>
+                    <div class="hand minute-hand"></div>
+                    <div class="hand second-hand"></div>
+                    <div class="time-display">00:00:00</div>
+                </div>
+            </section>
+            
+            <section class="quote-section">
+                <h2 class="section-title">每日一言</h2>
+                <div id="daily-quote" class="quote-text"></div>
+                <br>
+                <div>此页面只作为展示页面所以没有交互，详情请打电话或微信交流</div>
+            </section>
+            
+            <section class="content-section">
+                <div class="card">
+                    <h3 class="card-title">主要服务</h3>
+                    <div class="card-content">
+                        <div>定制个人博客</div>
+                        <div>相关手机、电脑的一切问题</div>
+                        <div>软件破解</div>
+                        <div>编写脚本</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">影视会员</h3>
+                    <div class="card-content">
+                        <div>腾讯视频</div>
+                        <div>爱奇艺</div>
+                        <div>优酷视频</div>
+                        <div>哔哩哔哩</div>
+                        <div>芒果视频</div>
+                        <div>搜狐视频</div>
+                        <div>咪咕视频</div>
+                        <div>西瓜视频</div>
+                        <div>乐视视频</div>
+                        <div>小米视频</div>
+                        <div>央视频</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">音频会员</h3>
+                    <div class="card-content">
+                        <div>QQ音乐</div>
+                        <div>网易云音乐</div>
+                        <div>酷狗音乐</div>
+                        <div>酷我音乐</div>
+                        <div>全民K歌</div>
+                        <div>懒人听书</div>
+                        <div>蜻蜓FM</div>
+                        <div>咪咕音乐</div>
+                        <div>汽水音乐</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">腾讯增值</h3>
+                    <div class="card-content">
+                        <div>QQ普通会员</div>
+                        <div>QQ超级会员</div>
+                        <div>QQ大会员</div>
+                        <div>QQ豪华绿钻</div>
+                        <div>腾讯Q币</div>
+                        <div>视频+绿钻</div>
+                        <div>QQ普通黄钻</div>
+                        <div>QQ豪华黄钻</div>
+                        <div>QQ普通蓝钻</div>
+                        <div>QQ豪华蓝钻</div>
+                        <div>腾讯微云</div>
+                        <div>腾讯文档</div>
+                        <div>腾讯手游加速器</div>
+                        <div>腾讯先锋</div>
+                        <div>腾讯动漫</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">知识教育</h3>
+                    <div class="card-content">
+                        <div>知乎会员</div>
+                        <div>作业帮</div>
+                        <div>新浪微博</div>
+                        <div>有道词典</div>
+                        <div>夸克学习</div>
+                        <div>懒人听书</div>
+                        <div>蜻蜓FM</div>
+                        <div>咪咕音乐</div>
+                        <div>汽水音乐</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">商务办公</h3>
+                    <div class="card-content">
+                        <div>百度网盘</div>
+                        <div>夸克网盘</div>
+                        <div>UC网盘</div>
+                        <div>天翼云盘</div>
+                        <div>WPS会员</div>
+                        <div>百度文库</div>
+                        <div>美图秀秀</div>
+                        <div>迅雷下载</div>
+                        <div>阿里云盘</div>
+                        <div>文心一言</div>
+                        <div>各种红包封面</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    
+    <script>
+        function updateClock() {
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+
+    var hourHand = document.querySelector('.hour-hand');
+    var minuteHand = document.querySelector('.minute-hand');
+    var secondHand = document.querySelector('.second-hand');
+    var timeDisplay = document.querySelector('.time-display');
+
+    // 计算每个指针的旋转角度
+    var hourDegrees = (hour % 12) * 30 + (minute / 2); // 每小时30度，加上分钟对时针的影响
+    var minuteDegrees = minute * 6; // 每分钟6度
+    var secondDegrees = second * 6; // 每秒6度
+
+    // 设置指针的旋转
+    hourHand.style.transform = 'rotate(' + hourDegrees + 'deg)';
+    minuteHand.style.transform = 'rotate(' + minuteDegrees + 'deg)';
+    secondHand.style.transform = 'rotate(' + secondDegrees + 'deg)';
+
+    // 更新时间显示
+    timeDisplay.textContent = hour.toString().padStart(2, '0') + ':' + minute.toString().padStart(2, '0') + ':' + second.toString().padStart(2, '0');
+}
+
+// 每秒更新时间
+setInterval(updateClock, 1000);
+
+// 初始化时钟
+updateClock();
+
+
+
+        function fetchDailyQuote() {
+            fetch('https://tenapi.cn/v2/yiyan')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('daily-quote').textContent = data;
+                });
+        }
+
+        fetchDailyQuote();
+    </script>
+</body>
+</html>
